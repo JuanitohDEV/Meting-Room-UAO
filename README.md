@@ -58,32 +58,37 @@ Database (MySQL)
 
 ## 📁 Project Structure
 
-Pagina Web ReservaSalas/
-
-├── reserva-salas /   <-- Backend Spring Boot
-| ├── src/main/java/com/uao/reservas_salas/
-| | ├── controller/  <-- REST Endpoints
-| | ├── service/     <-- Business Logic
-| | ├── repository/  <-- Data Acces
-| | ├── entity/      <-- JPA Models
-| | ├── security/    <-- JWT + Spring Security
-| | └── exception/   <-- Error Handing
-| └── src/main/resources/
-|   └── application.properties.example
-└── reservas-salas-frontend  <-- Frontend
-├── css/
-| └── style/css
-├── js/
-| ├── api.js         <-- Backend communication
-| ├── auth.js        <-- Session management
-| ├── app.js         <-- Login & registration
-| ├── docente.js     <-- Teacher dashboard
-| └──  secretaria.js  <-- Secretary dashboard
-├── pages/
-| ├── dashboard-docente.html
-| └── dashboard-secretaria.html
-└──index.html
-
+```
+reservas-salas-uao/
+│
+├── 📁 reservas-salas/                          # Spring Boot Backend
+│   ├── src/main/java/com/uao/reservas_salas/
+│   │   ├── 📁 controller/                      # REST Endpoints
+│   │   ├── 📁 service/                         # Business Logic
+│   │   ├── 📁 repository/                      # Data Access
+│   │   ├── 📁 entity/                          # JPA Models
+│   │   ├── 📁 security/                        # JWT + Spring Security
+│   │   └── 📁 exception/                       # Error Handling
+│   └── src/main/resources/
+│       └── application.properties.example
+│
+├── 📁 reservas-salas-frontend/                 # Frontend
+│   ├── 📁 css/
+│   │   └── styles.css
+│   ├── 📁 js/
+│   │   ├── api.js                              # Backend communication
+│   │   ├── auth.js                             # Session management
+│   │   ├── app.js                              # Login & registration
+│   │   ├── docente.js                          # Teacher dashboard
+│   │   └── secretaria.js                       # Secretary dashboard
+│   ├── 📁 pages/
+│   │   ├── dashboard-docente.html
+│   │   └── dashboard-secretaria.html
+│   └── index.html
+│
+├── reservas_salas_uao.sql                      # Database setup script
+└── README.md
+```
 ## ⚙️ Installation & Setup
 
 ### Prerequisites
