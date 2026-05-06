@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang ="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content ="width=device-width, initial-scale=1.0">
+        <title>ReservaSalas UAO</title>
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+
+    <body>
+        <div class="auth-container">
+            <div class="auth-card">
+                <div class="brand">
+                    <div class="brand-icon">
+                        <span style="font-size: 24px; font-weight: 700; color: white;">UAO</span>
+                    </div>
+                    <div>
+                        <div class="brand-name">ReservaSalas UAO </div>
+                        <div class="brand-sub">Facultad de Ingenieria y Ciencias Basicas</div>
+                    </div>
+                </div>
+
+                <div class="tabs">
+                    <button class="tab active" id="tab-login">Iniciar sesion</button>
+                    <button class="tab" id="tab-registro">Registrate</button>
+                </div>
+
+                <!-- FORM LOGIN -->
+                <form id="form-login" class="form active">
+                    
+                    <div class="field">
+                        <label>Correo Insitucional</label>
+                        <input type="email" id="login-correo" placeholder="usuario@uao.edu.co" required>
+                    </div>
+
+                    <div class="field">
+                        <label>Contraseña</label>
+                        <input type="password" id="login-pass" placeholder="********" required>
+                    </div>
+                    
+                    <div class="alert alert-error" id="login-error"></div>
+                    <button type="submit" class="btn-primary" id="btn-login">Iniciar sesion</button>
+                </form>
+
+
+                <!-- FORM REGISTER -->
+                <form id="form-registro" class="form">
+                    <div class="field">
+                        <label>Nombre Completo</label>
+                        <input type="text" id="reg-nombre" placeholder="Ej. Laura Daniela" required>
+                    </div>
+                    <div class="field">
+                        <label>Correo Insitucional</label>
+                        <input type="email" id="reg-correo" placeholder="usuario@uao.edu.co" required>
+                        <span class="hint">Solo se aceptan correos @uao.edu.co</span>
+                    </div>
+                    <div class="field">
+                        <label>Contraseña</label>
+                        <input type="password" id="reg-pass" placeholder="Minimo 8 Caracteres" required>
+                    </div>
+                    <div class="field">
+                        <label>Confimar Contraseña</label>
+                        <input type="password" id="reg-pass2" placeholder="Repite tu Contraseña" required>
+                    </div>
+                    <div class="alert alert-error" id="reg-error"></div>
+                    <div class="alert alert-ok" id="reg-ok"></div>
+                    <button type="submit" class="btn-primary" id="btn-registro"> Crear Cuenta</button>
+
+                </form>
+            </div>
+        </div>
+
+        <script src="js/auth.js"></script>
+        <script src="js/api.js"></script>
+        <script src="js/app.js"></script>
+
+    </body>
+</html>

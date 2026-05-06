@@ -1,0 +1,18 @@
+# Maven
+target/
+*.class
+*.jar
+
+# IDE
+.idea/
+*.iml
+.vscode/
+*.suo
+*.user
+
+# Credenciales
+application.properties
+
+# Sistema
+.DS_Store
+Thumbs.db
